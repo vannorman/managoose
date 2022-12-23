@@ -1,0 +1,31 @@
+
+	<head>
+		<title>  </title>
+		<link rel="icon" type="image/png" sizes="16x16" href="static/img/favicon_fcs.ico" />		
+	{% block styles %}
+		<link href="https://fonts.googleapis.com/css?family=Open+Sans:200,400,600,800" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Orbitron" rel="stylesheet">
+	
+		<link rel='stylesheet' href="/static/css/base.css{{version}}" type='text/css'>
+	{% endblock %}
+
+	{% block scripts %}
+		<script src='{% static "js/jquery-1.11.0.min.js" %}'></script>
+<!--		<script src='static/js/scrollcontrol.js'|add:version|safe ></script>-->
+		<!-- <script src='static/js/editor.js'|add:version|safe ></script> -->
+		<script src='static/js/base.js'|add:version|safe ></script>
+	{% endblock %}
+	</head>
+<body>
+
+
+	<div id="imageOverlay">
+		<div class="currentImage"></div>
+		<div class="x">X</div>
+	</div>
+
+
+</div>
+	{% block content %}
+	{% endblock %}
+</body>

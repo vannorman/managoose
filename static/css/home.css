@@ -1,0 +1,40 @@
+body, html {
+    font-family: Nunito;
+}
+
+#goose {
+    position: relative;
+    background-image:url('/static/img/goose.jpg');
+    background-size:contain;
+    background-repeat:no-repeat;
+    width:250px;
+    height:200px;
+    margin:0 auto;
+}
+#title {
+    font-family: GoodUnicorn;
+    font-size: 4em;
+    margin:0 auto;
+    text-align:center;
+    color:blue;
+    font-weight:bold;
+  background: -webkit-linear-gradient(180deg, #f00, #00f);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+#content {
+    position: relative;
+	width: 960px;
+    outline:1px solid black;
+    height:100px;
+    margin:0 auto;
+}
+@font-face {
+  font-family: GoodUnicorn;
+  src: url('/static/fonts/GoodUnicorn-Regular.ttf');
+}
+@font-face {
+  font-family: Nunito;
+  src: url('/static/fonts/Nunito-Regular.ttf');
+}
+

@@ -1,0 +1,31 @@
+{% load static %}
+	<head>
+		<title> ManaGoose</title>
+	<link rel="icon" type="image/png" sizes="16x16" href="static/img/favicon_fcs.ico" />		
+	{% block styles %}
+        <link rel="alternate" hreflang="us_en" href="http://164.92.112.73" />
+		<link rel='stylesheet' href="{% static 'css/home.css' %}" type='text/css'>
+		<link rel='stylesheet' href="/static/css/home.css{{version}}" type='text/css'>
+	{% endblock %}
+
+	{% block scripts %}
+		<script src='static/js/main.js'|add:version|safe ></script>
+	{% endblock %}
+	</head>
+<body>
+
+{% block content %}
+<div id="goose"></div>
+<div id="title">MANA GOOSE</div>
+<div id="content">
+    <form action="/search/"></form>
+hi</div>
+    {{ works.0.title }}
+
+I have been using this website for about 2 years now and they have always been able to help me out and do what I needed them to do and a perfect cost! Highly recommend this website if you need any help with literally ANYTHING!
+{% endblock %}
+
+
+
+
+
